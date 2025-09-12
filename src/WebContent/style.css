@@ -1,125 +1,125 @@
 body {
-margin: 0;
-padding: 20px;
-background-color: #eef2f7;
-color: #333;
-line-height: 1.6;
-font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #EEF2F7;
+    color: #333;
+    line-height: 1.6;
 }
 .container {
-max-width: 600px;
-margin: 30px auto;
-background-color: #ffffff;
-padding: 30px;
-border-radius: 10px;
-box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 30px auto;
+    background-color: #FFFFFF;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 h1 {
-color: #2c3e50;
-text-align: center;
-margin-bottom: 30px;
-font-size: 2em;
+    color: #2C3E50;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2em;
 }
 form p {
-margin-bottom: 20px;
+    margin-bottom: 20px;
 }
 label {
-display: block;
-margin-bottom: 8px;
-font-weight: bold;
-color: #555;
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #555;
 }
 input[type="text"],
 input[type="email"],
 textarea {
-width: calc(100% - 24px);
-padding: 12px;
-border: 1px solid #ccc;
-border-radius: 6px;
-font-size: 1em;
-box-sizing: border-box;
-transition: border-color 0.3s ease;
+    width: calc(100% - 24px);
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1em;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
 }
 input[type="text"]:focus,
 input[type="email"]:focus,
 textarea:focus {
-border-color: #007bff;
-outline: none;
+    border-color: #007BFF;
+    outline: none;
 }
 textarea {
-resize: vertical;
-min-height: 100px;
+    resize: vertical;
+    min-height: 100px;
 }
 .button-group {
-text-align: center;
-margin-top: 30px;
+    text-align: center;
+    margin-top: 30px;
 }
 input[type="submit"],
 .button {
-background-color: #007bff;
-color: white;
-padding: 12px 25px;
-border: none;
-border-radius: 6px;
-cursor: pointer;
-font-size: 1.1em;
-transition: background-color 0.3s ease, transform 0.2s ease;
-display: inline-block;
-margin: 0 10px;
+    background-color: #007BFF;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    display: inline-block;
+    margin: 0 10px;
 }
 input[type="submit"]:hover,
 .button:hover {
-background-color: #0056b3;
-transform: translateY(-2px);
+    background-color: #0056b3;
+    transform: translateY(-2px);
 }
 .button.secondary {
-background-color: #6c757d;
+    background-color: #6C757D;
 }
 .button.secondary:hover {
-background-color: #5a6268;
+    background-color: #5A6268;
 }
 .error-message {
-color: #dc3545;
-font-size: 0.9em;
-margin-top: 5px;
-display: block;
+    color: #DC3545;
+    font-size: 0.9em;
+    margin-top: 5px;
+    display: block;
 }
 .success-message {
-color: #28a745;
-font-size: 1.1em;
-text-align: center;
-margin-top: 20px;
-padding: 15px;
-background-color: #d4edda;
-border: 1px solid #c3e6cb;
-border-radius: 5px;
+    color: #28A745;
+    font-size: 1.1em;
+    text-align: center;
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #D4EDDA;
+    border: 1px solid #C3E6CB;
+    border-radius: 5px;
 }
 .display-info p {
-background-color: #f8f9fa;
-padding: 10px 15px;
-border-left: 4px solid #007bff;
-margin-bottom: 10px;
-border-radius: 4px;
+    background-color: #F8F9FA;
+    padding: 10px 15px;
+    border-left: 4px solid #007BFF;
+    margin-bottom: 10px;
+    border-radius: 4px;
 }
 .display-info p strong {
-color: #2c3e50;
+    color: #2C3E50;
 }
 pre {
-background-color: #f8f9fa;
-padding: 15px;
-border: 1px solid #e9ecef;
-border-radius: 6px;
-white-space: pre-wrap;
-word-wrap: break-word;
-font-family: 'Courier New', Courier, monospace;
-font-size: 0.95em;
+    background-color: #F8F9FA;
+    padding: 15px;
+    border: 1px solid #E9ECEF;
+    border-radius: 6px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.95em;
 }
 a {
-color: #007bff;
-text-decoration: none;
-transition: color 0.3s ease;
+    color: #007BFF;
+    text-decoration: none;
+    transition: color 0.3s ease;
 }
 a:hover {
-color: #0056b3;
-text-decoration: underline;
+    color: #0056B3;
+    text-decoration: underline;
 }
