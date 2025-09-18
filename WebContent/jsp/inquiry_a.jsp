@@ -2,7 +2,6 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <c:url var="inquiryUrl" value="/inquiry" />
 <c:url var="userUrl" value="jsp/Addtion.jsp" />
-<c:url var="abcUrl" value="jsp/inquiry_a.jsp" />
 <c:url var="cssUrl" value="/style.css" />
 <!DOCTYPE html>
 <html lang="ja">
@@ -15,7 +14,7 @@
 		<h1>お問い合わせ履歴</h1>
 		<c:choose>
 			<c:when test="${not empty inquiries}">
-				<c:forEach var="inquiry" items="${inquiries}" varStatus="status">
+				<c:forEach var="inquiry1" items="${inquiries1}" varStatus="status">
 					<div class="inquiry-item">
 						<h3>お問い合わせ #${status.count}</h3>
 						<p>
@@ -78,9 +77,7 @@
 		<div class="button-group">
 			<a href="${inquiryUrl}" class="button secondary">お問い合わせフォームに戻る</a>
 		</div>
-		<div class="button-group">
-		    <a href="${userUrl}" class="button secondary">スタッフ専用</a>
-		</div>
+		
 	</div>
 </body>
 </html>
