@@ -50,7 +50,7 @@ public class Inquiry1Servlet extends HttpServlet {
 			if (inquiry1 != null) {
 				inquiryDAO1.addInquiry1(inquiry1);
 			}
-			session.removeAttribute("inquiry");
+			session.removeAttribute("inquiry1");
 			RequestDispatcher rd = req.getRequestDispatcher("/jsp/okuru.jsp");
 			rd.forward(req, resp);
 		} else if (action != null && action.equals("updateStatus")) {
@@ -96,12 +96,12 @@ public class Inquiry1Servlet extends HttpServlet {
 			}
 			if (!errors.isEmpty()) {
 				req.setAttribute("errors", errors);
-				req.setAttribute("inquiry", inquiry1);
+				req.setAttribute("inquiry1", inquiry1);
 				generateCaptcha(req);
 				RequestDispatcher rd = req.getRequestDispatcher("jsp/touroku.jsp");
 				rd.forward(req, resp);
 			} else {
-				session.setAttribute("inquiry", inquiry1);
+				session.setAttribute("inquiry1", inquiry1);
 				req.setAttribute("name", name);
 				req.setAttribute("email", email);
 				req.setAttribute("content", content);

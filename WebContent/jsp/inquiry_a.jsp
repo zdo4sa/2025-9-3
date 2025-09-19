@@ -13,31 +13,31 @@
 	<div class="container">
 		<h1>お問い合わせ履歴</h1>
 		<c:choose>
-			<c:when test="${not empty inquiries}">
+			<c:when test="${not empty inquiries1}">
 				<c:forEach var="inquiry1" items="${inquiries1}" varStatus="status">
 					<div class="inquiry-item">
-						<h3>お問い合わせ #${status.count}</h3>
+						<h3>お問い合わせ #${status1.count}</h3>
 						<p>
 							<strong>名前:</strong>
-							<c:out value="${inquiry.name}" />
+							<c:out value="${inquiry1.name}" />
 						</p>
 						<p>
 							<strong>メールアドレス:</strong>
-							<c:out value="${inquiry.email}" />
+							<c:out value="${inquiry1.email}" />
 						</p>
 						<p>
 							<strong>内容:</strong>
 						</p>
 						<pre>
-							<c:out value="${inquiry.content}" />
+							<c:out value="${inquiry1.content}" />
 						</pre>
 						<p>
 							<strong>添付ファイル:</strong>
 							<c:choose>
-    							<c:when test="${not empty inquiry.attachmentFileName}">
+    							<c:when test="${not empty inquiry1.attachmentFileName}">
         							<c:url var="fileUrl" value="/uploads/${inquiry.attachmentFileName}" />
         							<a href="${fileUrl}" target="_blank">
-            							<c:out value="${inquiry.attachmentFileName}" />
+            							<c:out value="${inquiry1.attachmentFileName}" />
         							</a>
     							</c:when>
     							<c:otherwise>
@@ -49,7 +49,7 @@
 							<strong>ステータス:</strong>
 							<c:out value="${inquiry.status}" />
 						</p>
-						<form action="${inquiryUrl}" method="post" style="display: inline;">
+						<form action="${inquiry1Url}" method="post" style="display: inline;">
 							<input type="hidden" name="action" value="updateStatus">
 							<input type="hidden" name="index" value="${status.index}">
 							<label for="status-${status.index}">ステータス変更:</label> <select
@@ -64,18 +64,20 @@
 						</form>
 					</div>
 					 <div class="button-group">
-		    <a href="${abcUrl}" class="button secondary">ここまで</a>
-		</div>
+		           <a href="${abcUrl}" class="button secondary">ここまで</a>
+		           </div>
 				
 					<hr>
 				</c:forEach>
 			</c:when>
 			<c:otherwise>
-				<p>まだお問い合わせはありません。</p>
+				<p>まだ回答を用意できていません</p>
+				
 			</c:otherwise>
 		</c:choose>
 		<div class="button-group">
 			<a href="${inquiryUrl}" class="button secondary">お問い合わせフォームに戻る</a>
+			<inquiries1>
 		</div>
 		
 	</div>
