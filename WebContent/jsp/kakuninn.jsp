@@ -6,7 +6,7 @@
 <html lang="ja">
 <head>
 <meta charset="UTF-8">
-<title>お問い合わせ内容確認</title>
+<title>内容確認</title>
 <link rel="stylesheet" href="${cssUrl}">
 </head>
 <body>

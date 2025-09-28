@@ -102,7 +102,7 @@ input[type="submit"]:hover,
     border-radius: 4px;
 }
 .display-info p strong {
-    color: white;
+	color: #2c3e50;
 }
 pre {
     background-color: #F8F9FA;

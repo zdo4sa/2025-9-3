@@ -13,10 +13,9 @@
 	<div class="container">
 		<h1>お問い合わせ内容確認</h1>
 		<p>以下の内容でよろしいですか？</p>
+		
 		<div class="display-info">
-			<p>
-				<strong>名前:</strong>
-				<%=request.getAttribute("name")%></p>
+			<p><strong>名前:</strong> <%= request.getAttribute("name") %></p>
 			<p>
 				<strong>メールアドレス:</strong>
 				<%=request.getAttribute("email")%></p>
